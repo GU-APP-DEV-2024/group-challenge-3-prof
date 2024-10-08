@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
 
     fun onClick(view: View) {
         view as ImageView
-        //Snackbar.make(view, "Button ${resources.getResourceEntryName(view.id)} was clicked", Snackbar.LENGTH_SHORT).show()
+        Snackbar.make(view, "Button ${resources.getResourceEntryName(view.id)} was clicked", Snackbar.LENGTH_SHORT).show()
         var card =  board.getValueAt(getCardID(view))
         view.setImageResource(getImageID(card))
     }
